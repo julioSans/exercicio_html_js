@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados Bancarios </title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="interfarce">
+      <div class="conteiner">
+        <h1> Brig Branking</h1>
+        <h2>Depóstios </h2>
+          <form id="form-Deposito">
+            <input type="text"placeholder="Nome completo (Obrigatorio)"id="nome-beneficiado"required><br>
+            <div class="error-Mensagem">
+              <p>
+                O nome precisa ser completo. 
+              </p>
+            </div> 
+            <input type="number"placeholder="Número da conta"id="numero-conta" required><br>
+            <input type="number"placeholder="Digito último"id="ultimo-Digito"required>
+            <input type="nu"placeholder="Valor"id="valor"required><br>
+            <input type="text"placeholder="Descrição (opcional)" id="descricao"><br>
+            <button type="submit" id="button">
+                <p><span>Depositar</span></p>
+            </button>
+            <p class="mensagens-Sucess">
+
+            </p>
+          </form>
+      </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
