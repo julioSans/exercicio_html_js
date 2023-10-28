@@ -3,34 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dados Bancarios </title>
-  <link rel="stylesheet" href="form.css">
+  <title>Atividade de html com javaScript</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <div class="interfarce">
-      <div class="conteiner">
-        <h1> Brig Branking</h1>
-        <h2>Depóstios </h2>
-          <form id="form-Deposito">
-            <input type="text"placeholder="Nome completo (Obrigatorio)"id="nome-beneficiado"required><br>
-            <div class="error-Mensagem">
-              <p>
-                O nome precisa ser completo. 
-              </p>
-            </div> 
-            <input type="number"placeholder="Número da conta"id="numero-conta" required><br>
-            <input type="number"placeholder="Digito último"id="ultimo-Digito"required>
-            <input type="nu"placeholder="Valor"id="valor"required><br>
-            <input type="text"placeholder="Descrição (opcional)" id="descricao"><br>
-            <button type="submit" id="button">
-                <p><span>Depositar</span></p>
-            </button>
-            <p class="mensagens-Sucess">
-
-            </p>
-          </form>
-      </div>
+  <div class="conteiner-principal">
+    <h1>Calculando </h1>
+    <h2> Campo A + B</h2>
+      <form action="">
+        <input type="number"placeholder="Digite o primeiro campo A "maxlength="2"id="campo-A"required >
+        <input type="number"placeholder="Digite o segundo campo B "maxlength="2" id="campo-B"required>
+        <button type="submit">
+          Verificar
+        </button>
+        <div class="sucess-msg">
+          <p>Execução bem sucedida o campo B é maior do que o campo A</p>
+        </div>
+        <div class="error-Msg">
+          <p> Execução mal sucedida pois o valor B é menor do que o A, tente com outro numero </p>
+        </div>
+      </form>
   </div>
-  <script src="./main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
