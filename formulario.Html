@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atividade de html com javaScript</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
   <div class="conteiner-principal">
-    <h1>Calculando </h1>
-    <h2> Campo A + B</h2>
-      <form action="">
-        <input type="number"placeholder="Digite o primeiro campo A "maxlength="2"id="campo-A"required >
-        <input type="number"placeholder="Digite o segundo campo B "maxlength="2" id="campo-B"required>
-        <button type="submit">
+    <h1>Verificar se os campo B é maior </h1>
+      <form id="form_calcu">
+        <input type="number" placeholder="Digite o primeiro campo A" id="campoA"required >
+        <input type="number" placeholder="Digite o segundo campo B " id="campoB"required>
+        <button type="submit" onclick="calculaCampo()">
           Verificar
         </button>
+            <div class="validacaoNaN">
+              <p id="resultado">
+              </p>
+            </div>
         <div class="sucess-msg">
-          <p>Execução bem sucedida o campo B é maior do que o campo A</p>
+          <p></p>
         </div>
         <div class="error-Msg">
           <p> Execução mal sucedida pois o valor B é menor do que o A, tente com outro numero </p>
